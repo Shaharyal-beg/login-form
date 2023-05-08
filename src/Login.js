@@ -7,14 +7,13 @@ const Login = () => {
     const [password, setPassword] = useState ("");
     const [allEntry, setAllEntry] = useState([]);
 
-
-    
-    
     const submitForm = (e) =>{
         e.preventDefault();
         const newEntry = {email:email,password:password}; 
         setAllEntry([...allEntry,newEntry]);
-        console.log(allEntry);       
+        console.log(allEntry);   
+        setEmail("");
+        setPassword("");    
      }
   return (
     <div className='Login'>
