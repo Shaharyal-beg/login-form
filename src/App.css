@@ -1,0 +1,108 @@
+.app{
+  margin: 0;
+  padding: 0;
+}
+
+.Login{
+  width: 90vw;
+  height: 90vh;
+  background-color: black;
+  margin: 5vh 0 0 10vh;
+  padding-top:2.5vh ;
+  border-radius: 10px;
+ 
+  
+  box-shadow: darkgrey 0px 8px 24px;
+}
+.form-section{
+  width: 45vw;
+  height: 90vh;
+  float: left;
+  color: white;
+}
+.image-section{
+  width: 35vw;
+  height: 85vh;
+  border-radius:10px ;
+  margin-left: 52vw;
+  background-image: url("./bg.PNG");
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  
+}
+.logo{
+  width: 12vw;
+  height: 7vh;
+  margin: 1vh 0 0 3vw;
+  background-color: black;
+  color: rgb(166,108,255);
+  color: linear-gradient(90deg, rgba(166,108,255,1) 36%, rgba(208,245,0,1) 75%, rgba(208,245,0,1) 100%);
+  text-align: center;
+  font-weight: bolder ;
+  font-size: 20px;
+}
+.form{
+  width: 40vw;
+  height: 75vh;
+  padding-left: 4vw;
+  margin-left: 4vw;
+  
+}
+label{
+  padding-top: 2vh;
+
+}
+input{
+  width: 30vw;
+  height: 6vh;
+  margin: 1vh 0 1vh 0;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding-left: 1vw;
+  
+  
+}
+::placeholder{
+  color: black;
+  font-weight: bold;
+  
+
+}
+.log-btn{
+  text-align: center;
+  background-color: 	#A66CFF;
+  color: black;
+  width: 30vw;
+  height: 6vh;
+  margin-right: 3vw;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+
+}
+.rem-for{
+  width: 30vw;
+  height: 4vh;
+  background-color: black;
+  margin-bottom: 3vh;
+  cursor: pointer;
+}
+
+@media all and (max-width: 500px){
+  .Login{
+    width: 70vw;
+    height: 90vh;
+    align-items: right;
+  }
+  .image-section{
+    display: none;
+  }
+  .rem-for{
+    width: 50vw;
+    font-size: 10px;
+  }
+}
