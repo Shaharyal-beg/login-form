@@ -1,17 +1,26 @@
 .app{
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
-
+.container{
+  margin-top: -5vh;
+  width: 100vw;
+  height: 100vh;
+  border: none;
+  background-image: url('./main-bg.avif');
+  background-repeat: no-repeat;
+  background-size:cover ;
+  padding-top:5vh;
+  overflow: hidden;
+}
 .Login{
-  width: 90vw;
-  height: 90vh;
+  width: 80vw;
+  height: 85vh;
   background-color: black;
-  margin: 5vh 0 0 10vh;
+  margin: 5vh 0 0 10vw;
   padding-top:2.5vh ;
   border-radius: 10px;
- 
-  
   box-shadow: darkgrey 0px 8px 24px;
 }
 .form-section{
@@ -19,41 +28,43 @@
   height: 90vh;
   float: left;
   color: white;
+  margin-left: -2.5vw;
 }
 .image-section{
   width: 35vw;
-  height: 85vh;
+  height: 82vh;
   border-radius:10px ;
-  margin-left: 52vw;
+  margin-left: 43.4vw;
   background-image: url(./newbg.png);
   background-size: cover;
   justify-content: center;
   align-items: center;
   align-items: center;
-  background-color: black;
-  
+  background-color: #4B4B4B;
 }
 .logo{
-  width: 12vw;
-  height: 7vh;
-  margin: 1vh 0 0 3vw;
+  width: 14vw;
+  height: 9vh;
+  margin: 1vh 0 0 7.8vw;
   background-color: black;
   color: rgb(166,108,255);
   color: linear-gradient(90deg, rgba(166,108,255,1) 36%, rgba(208,245,0,1) 75%, rgba(208,245,0,1) 100%);
   text-align: center;
   font-weight: bolder ;
   font-size: 20px;
+  background-image: url('./toslogo-white.png');
+  background-repeat: no-repeat;
+  margin-left: 16.5vw;
 }
+
 .form{
   width: 40vw;
   height: 75vh;
   padding-left: 4vw;
-  margin-left: 4vw;
-  
+  margin-left: 4.5vw;
 }
 label{
   padding-top: 2vh;
-
 }
 input{
   width: 30vw;
@@ -63,14 +74,10 @@ input{
   border: none;
   outline: none;
   padding-left: 1vw;
-  
-  
 }
 ::placeholder{
-  color: black;
+  color: #141411;
   font-weight: bold;
-  
-
 }
 .log-btn{
   text-align: center;
@@ -83,16 +90,20 @@ input{
   border: none;
   color: white;
   cursor: pointer;
+}
 
+.log-btn:hover{
+  background-color: white;
+  color: black;
 }
 .rem-for{
   width: 30vw;
   height: 4vh;
   background-color: black;
-  margin-bottom: 3vh;
+  margin-bottom: 5vh;
   cursor: pointer;
 }
-
+ 
 @media all and (max-width: 500px){
   .Login{
     width: 70vw;

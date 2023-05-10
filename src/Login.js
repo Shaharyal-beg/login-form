@@ -16,21 +16,21 @@ const Login = () => {
         setPassword("");    
      }
   return (
-    <div className='Login'>
+    <div className='container'>
+       <div className='Login'>
       <div className='form-section'>
         <div className='logo'>
-        Crypto Card
+        
         </div><br/>
         <div className='form'>
           <div className='form-head'>
-          <h1>Welcome back, USER</h1>
-          <p style={{marginTop:'-4vh '}}>Please enter your details</p>
+          <h1>Welcome, Shaharyal</h1>
           </div>
           <br/>
           <form action='' onSubmit={submitForm}  className='form-body'>
-          <label htmlFor='email'>Name</label><br/>
+          <label htmlFor='email'>Email</label><br/>
           <input 
-           placeholder='Enter Your Name' 
+           placeholder='Email' 
            value={email}
             onChange={(e)=> setEmail(e.target.value)} 
             type='text' 
@@ -49,9 +49,9 @@ const Login = () => {
           autoComplete='off'/>
           <br/>
           <div className='rem-for'>
-          <span><CheckBoxIcon/></span>
+          <span><CheckBoxIcon  sx={{ mb: -0.8 }}  /></span>&nbsp;
           <span> Remember me </span> 
-          <span style={{marginLeft:'13vw'}}>Forgot Password</span> 
+          <span style={{marginLeft:'7.8vw',textDecoration:'underline'}}>Forgot Password/Username</span> 
 
           </div>
           
@@ -63,6 +63,8 @@ const Login = () => {
       <div className='image-section'>
        
       </div>
+      </div>
+   
       </div>
   )
 }
